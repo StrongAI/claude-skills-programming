@@ -1,0 +1,27 @@
+[submodule "concurrency"]
+	path = concurrency
+	url = git@github.com:StrongAI/claude-strongai-swift-concurrency.git
+[submodule "cpp"]
+	path = cpp
+	url = git@github.com:StrongAI/claude-skills-code-cpp.git
+[submodule "decompiling"]
+	path = decompiling
+	url = git@github.com:StrongAI/claude-skills-code-decompile.git
+[submodule "dispatching-programmers"]
+	path = dispatching-programmers
+	url = git@github.com:StrongAI/claude-skills-code-subagent-driven-development.git
+[submodule "postgres"]
+	path = postgres
+	url = git@github.com:StrongAI/claude-skills-code-postgres-patterns.git
+[submodule "swift"]
+	path = swift
+	url = git@github.com:StrongAI/claude-skills-code-swift-patterns.git
+[submodule "swift-ui"]
+	path = swift-ui
+	url = git@github.com:StrongAI/claude-skills-code-swift-swiftui.git
+[submodule "typescript"]
+	path = typescript
+	url = git@github.com:StrongAI/claude-skills-code-typescript.git
+[submodule "wrapping-up"]
+	path = wrapping-up
+	url = git@github.com:StrongAI/claude-skills-code-verification-before-completion.git
