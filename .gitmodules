@@ -1,27 +1,27 @@
 [submodule "concurrency"]
 	path = concurrency
-	url = git@github.com:StrongAI/claude-strongai-swift-concurrency.git
+	url = git@github.com:StrongAI/claude-skills-programming-concurrency.git
 [submodule "cpp"]
 	path = cpp
-	url = git@github.com:StrongAI/claude-skills-code-cpp.git
+	url = git@github.com:StrongAI/claude-skills-programming-cpp.git
 [submodule "decompiling"]
 	path = decompiling
-	url = git@github.com:StrongAI/claude-skills-code-decompile.git
+	url = git@github.com:StrongAI/claude-skills-programming-decompiling.git
 [submodule "dispatching-programmers"]
 	path = dispatching-programmers
-	url = git@github.com:StrongAI/claude-skills-code-subagent-driven-development.git
+	url = git@github.com:StrongAI/claude-skills-programming-dispatching-programmers.git
 [submodule "postgres"]
 	path = postgres
-	url = git@github.com:StrongAI/claude-skills-code-postgres-patterns.git
+	url = git@github.com:StrongAI/claude-skills-programming-postgres.git
 [submodule "swift"]
 	path = swift
-	url = git@github.com:StrongAI/claude-skills-code-swift-patterns.git
+	url = git@github.com:StrongAI/claude-skills-programming-swift.git
 [submodule "swift-ui"]
 	path = swift-ui
-	url = git@github.com:StrongAI/claude-skills-code-swift-swiftui.git
+	url = git@github.com:StrongAI/claude-skills-programming-swift-ui.git
 [submodule "typescript"]
 	path = typescript
-	url = git@github.com:StrongAI/claude-skills-code-typescript.git
+	url = git@github.com:StrongAI/claude-skills-programming-typescript.git
 [submodule "wrapping-up"]
 	path = wrapping-up
-	url = git@github.com:StrongAI/claude-skills-code-verification-before-completion.git
+	url = git@github.com:StrongAI/claude-skills-programming-wrapping-up.git
