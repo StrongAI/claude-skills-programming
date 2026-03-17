@@ -14,15 +14,28 @@ A new feature, enhancement, or planned change.
 1. `/think` — brainstorm the design, explore approaches, get approval
 2. `/write-plan` — create a detailed implementation plan from the design
 3. `/dispatching-programmers` — execute the plan, dispatching subagents per task
+   - Each subagent runs `/implement` — the TDD loop with audit agent per round
 4. `/wrapping-up-programming` — verify everything works, commit
 
-Each task dispatched in step 3 uses the appropriate language/framework skill (`/programming-swift`, `/swift-tdd`, `/programming-typescript`, etc.).
+Each task dispatched in step 3 MUST load the appropriate language/framework skill:
+
+| Language/Framework | Skill | Also load |
+|---|---|---|
+| Swift | `/programming-swift` | `/swift-tdd` for test-driven work |
+| SwiftUI | `/programming-swift-ui` | `/programming-swift` always |
+| TypeScript / React / Next.js | `/programming-typescript` | |
+| C++ | `/programming-cpp` | |
+| PostgreSQL | `/programming-postgres` | |
+| Concurrent code (any language) | `/programming-concurrency` | language skill |
+| Reverse engineering / binaries | `/decompiling` | |
+
+If the task spans multiple languages or frameworks, load all applicable skills. The language skill defines patterns, conventions, and anti-patterns that the subagent must follow.
 
 ## Path 2: Auditing an Implementation
 
 Verifying that what was built matches what was planned.
 
-1. `/auditing` — clean agent reads the plan, reads every changed file, produces a findings report
+1. `/audit-code` — clean agent reads the plan, reads every changed file, produces a findings report
 
 This runs AFTER implementation, not during. The auditor is a separate agent with no implementation context.
 
