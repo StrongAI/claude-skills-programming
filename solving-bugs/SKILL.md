@@ -1,5 +1,5 @@
 ---
-name: programming-solving-bugs
+name: solving-bugs
 description: Use when encountering any code behavior question — bugs, crashes, unexpected output, test failures, "why does this do X", "this isn't working", "I think the issue is", EXC_BAD_ACCESS, segfault, wrong return value, or any unexpected behavior. Triggers BEFORE reading source code to reason about behavior, BEFORE proposing fixes. Triggers when about to say "I think the problem is" or "looking at the code, it seems like" without having run anything, or when about to propose a fix without root cause investigation.
 ---
 
