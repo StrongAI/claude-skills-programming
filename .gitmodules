@@ -37,3 +37,6 @@
 [submodule "solving-bugs"]
 	path = solving-bugs
 	url = git@github.com:StrongAI/claude-skills-programming-solving-bugs.git
+[submodule "dispatch-auditors"]
+	path = dispatch-auditors
+	url = git@github.com:StrongAI/claude-skills-programming-dispatch-auditors.git
