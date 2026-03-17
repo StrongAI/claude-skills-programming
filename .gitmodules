@@ -31,3 +31,6 @@
 [submodule "auditing"]
 	path = auditing
 	url = git@github.com:StrongAI/claude-skills-programming-auditing.git
+[submodule "implementing"]
+	path = implementing
+	url = git@github.com:StrongAI/claude-skills-programming-implementing.git
