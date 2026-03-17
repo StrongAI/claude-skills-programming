@@ -28,3 +28,6 @@
 [submodule "swift-tdd"]
 	path = swift-tdd
 	url = git@github.com:StrongAI/claude-skills-programming-swift-tdd.git
+[submodule "auditing"]
+	path = auditing
+	url = git@github.com:StrongAI/claude-skills-programming-auditing.git
