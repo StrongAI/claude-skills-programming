@@ -56,17 +56,56 @@ The principle is the same regardless of language or debugger: set a breakpoint, 
 
 ## Phase 2: Analyze
 
+Record observations precisely before any reasoning:
+
+```
+SYMPTOM:       [exact behavior observed]
+EXPECTED:      [exact behavior expected]
+REPRODUCTION:  [steps to reproduce]
+CONTEXT:       [what changed — git history, config, deps, environment]
+```
+
 1. **Read error messages carefully** — don't skip past errors or warnings. Read stack traces completely. Note line numbers, file paths, error codes.
 2. **Trace data flow** — where does the bad value originate? What called this with bad data? Keep tracing up until you find the source.
 3. **Find working examples** — similar working code in the same codebase. Compare against references completely, not skimming. Every difference matters.
 4. **In multi-component systems** — add diagnostic logging at each component boundary. Run once to see WHERE it breaks. Then investigate that specific component.
 
+### Expert Heuristics
+
+- **"Where does the data go wrong?"** — trace from source to symptom; find the transition point from correct to incorrect
+- **"What's different?"** — compare working case to broken case; the difference identifies the variable the bug depends on
+- **"What assumptions am I making?"** — list them explicitly, test each one; the wrong assumption is often the bug
+- **"When did it last work?"** — temporal reasoning; git bisect, deployment logs, config changes
+
 ## Phase 3: Hypothesize and Test
 
-1. **Form a single hypothesis** — "I think X is the root cause because I observed Y." Be specific. The hypothesis must reference observed data, not source code reading.
-2. **Test minimally** — smallest possible change, one variable at a time.
-3. **Verify under debugger** — re-run, confirm the fix addresses what you observed. Don't stack fixes.
-4. **When you don't know** — say so. Don't pretend. Research more.
+**Generate at least 3 hypotheses before pursuing any.** This prevents single-hypothesis tunneling — the #1 difference between expert and novice debuggers.
+
+For each hypothesis:
+
+```
+HYPOTHESIS:  [specific, testable claim referencing observed data]
+PREDICTION:  [what would be true if this hypothesis is correct]
+TEST:        [the experiment that would confirm or refute it]
+RESULT:      [confirmed / refuted / inconclusive — fill in after testing]
+```
+
+**Rank hypotheses** by likelihood × ease of testing. Test the most discriminating experiment first — the one that eliminates the most hypotheses regardless of outcome.
+
+**Binary search the search space**: if the bug could be in module A or B, test at the boundary. If it could be in commit X or Y, use `git bisect`. Halve the space with each experiment.
+
+**Record negative results**: "I checked X and it was correct" eliminates a region of the search space. Track what's been ruled out.
+
+### Root Cause vs. Symptom
+
+The root cause is the **earliest point in the causal chain** where behavior diverges from correct. Use the "5 Whys":
+- Why did the UI crash? → nil data
+- Why nil? → API 500
+- Why 500? → query timeout
+- Why timeout? → missing index
+- Why missing? → migration incomplete ← **root cause**
+
+Do NOT fix downstream symptoms. Fix the root cause.
 
 ## Phase 4: Fix
 
