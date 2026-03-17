@@ -25,3 +25,6 @@
 [submodule "wrapping-up"]
 	path = wrapping-up
 	url = git@github.com:StrongAI/claude-skills-programming-wrapping-up.git
+[submodule "swift-tdd"]
+	path = swift-tdd
+	url = git@github.com:StrongAI/claude-skills-programming-swift-tdd.git
