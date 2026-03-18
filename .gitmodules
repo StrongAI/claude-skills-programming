@@ -40,3 +40,6 @@
 [submodule "dispatch-auditors"]
 	path = dispatch-auditors
 	url = git@github.com:StrongAI/claude-skills-programming-dispatch-auditors.git
+[submodule "dispatch_analyzers"]
+	path = dispatch_analyzers
+	url = git@github.com:StrongAI/claude-skills-programming-dispatch_analyzers.git
