@@ -43,3 +43,6 @@
 [submodule "dispatch_analyzers"]
 	path = dispatch_analyzers
 	url = git@github.com:StrongAI/claude-skills-programming-dispatch_analyzers.git
+[submodule "dispatch-test-designers"]
+	path = dispatch-test-designers
+	url = git@github.com:StrongAI/claude-skills-programming-dispatch-test-designers.git
