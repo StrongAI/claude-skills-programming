@@ -7,42 +7,42 @@
 [submodule "decompiling"]
 	path = decompiling
 	url = git@github.com:StrongAI/claude-skills-programming-decompiling.git
-[submodule "dispatching-programmers"]
-	path = dispatching-programmers
-	url = git@github.com:StrongAI/claude-skills-programming-dispatching-programmers.git
 [submodule "postgres"]
 	path = postgres
 	url = git@github.com:StrongAI/claude-skills-programming-postgres.git
 [submodule "swift"]
 	path = swift
 	url = git@github.com:StrongAI/claude-skills-programming-swift.git
-[submodule "swift-ui"]
-	path = swift-ui
-	url = git@github.com:StrongAI/claude-skills-programming-swift-ui.git
 [submodule "typescript"]
 	path = typescript
 	url = git@github.com:StrongAI/claude-skills-programming-typescript.git
-[submodule "wrapping-up"]
-	path = wrapping-up
-	url = git@github.com:StrongAI/claude-skills-programming-wrapping-up.git
-[submodule "swift-tdd"]
-	path = swift-tdd
-	url = git@github.com:StrongAI/claude-skills-programming-swift-tdd.git
 [submodule "auditing"]
 	path = auditing
 	url = git@github.com:StrongAI/claude-skills-programming-auditing.git
 [submodule "implementing"]
 	path = implementing
 	url = git@github.com:StrongAI/claude-skills-programming-implementing.git
-[submodule "solving-bugs"]
-	path = solving-bugs
-	url = git@github.com:StrongAI/claude-skills-programming-solving-bugs.git
-[submodule "dispatch-auditors"]
-	path = dispatch-auditors
-	url = git@github.com:StrongAI/claude-skills-programming-dispatch-auditors.git
 [submodule "dispatch_analyzers"]
 	path = dispatch_analyzers
 	url = git@github.com:StrongAI/claude-skills-programming-dispatch_analyzers.git
-[submodule "dispatch-test-designers"]
-	path = dispatch-test-designers
-	url = git@github.com:StrongAI/claude-skills-programming-dispatch-test-designers.git
+[submodule "dispatch_auditors"]
+	path = dispatch_auditors
+	url = git@github.com:StrongAI/claude-skills-programming-dispatch_auditors.git
+[submodule "dispatch_test_designers"]
+	path = dispatch_test_designers
+	url = git@github.com:StrongAI/claude-skills-programming-dispatch_test_designers.git
+[submodule "dispatching_programmers"]
+	path = dispatching_programmers
+	url = git@github.com:StrongAI/claude-skills-programming-dispatching_programmers.git
+[submodule "solving_bugs"]
+	path = solving_bugs
+	url = git@github.com:StrongAI/claude-skills-programming-solving_bugs.git
+[submodule "swift_tdd"]
+	path = swift_tdd
+	url = git@github.com:StrongAI/claude-skills-programming-swift_tdd.git
+[submodule "swift_ui"]
+	path = swift_ui
+	url = git@github.com:StrongAI/claude-skills-programming-swift_ui.git
+[submodule "wrapping_up"]
+	path = wrapping_up
+	url = git@github.com:StrongAI/claude-skills-programming-wrapping_up.git
