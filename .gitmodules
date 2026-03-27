@@ -31,9 +31,6 @@
 [submodule "dispatch_test_designers"]
 	path = dispatch_test_designers
 	url = git@github.com:StrongAI/claude-skills-programming-dispatch_test_designers.git
-[submodule "dispatching_programmers"]
-	path = dispatching_programmers
-	url = git@github.com:StrongAI/claude-skills-programming-dispatching_programmers.git
 [submodule "solving_bugs"]
 	path = solving_bugs
 	url = git@github.com:StrongAI/claude-skills-programming-solving_bugs.git
@@ -46,3 +43,6 @@
 [submodule "wrapping_up"]
 	path = wrapping_up
 	url = git@github.com:StrongAI/claude-skills-programming-wrapping_up.git
+[submodule "dispatch_programmers"]
+	path = dispatch_programmers
+	url = git@github.com:StrongAI/claude-skills-programming-dispatch_programmers.git
