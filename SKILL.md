@@ -13,7 +13,7 @@ A new feature, enhancement, or planned change.
 
 1. `/think` — brainstorm the design, explore approaches, get approval
 2. `/write-plan` — create a detailed implementation plan from the design
-3. `/dispatching-programmers` — execute the plan, dispatching subagents per task
+3. `/dispatch-programmers` — execute the plan, dispatching subagents per task
    - Each subagent runs `/implement` — the TDD loop with audit agent per round
 4. `/wrapping-up-programming` — verify everything works, commit
 
