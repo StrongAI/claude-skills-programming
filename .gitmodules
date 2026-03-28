@@ -46,3 +46,6 @@
 [submodule "dispatch_programmers"]
 	path = dispatch_programmers
 	url = git@github.com:StrongAI/claude-skills-programming-dispatch_programmers.git
+[submodule "vm_test_runner"]
+	path = vm_test_runner
+	url = git@github.com:StrongAI/claude-skills-programming-vm_test_runner.git
